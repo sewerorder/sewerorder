@@ -1,0 +1,1694 @@
+{
+  "definitions": {
+    "Address": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "Title": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "FirstName": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "FamilyName": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "Organization": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "Department": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "StreetNameWithNumber": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "PostalZip": {
+          "type": "integer"
+        },
+        "City": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "Country": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "CallNumber": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "MobileNumber": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "FaxNumber": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "eMail": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "Homepage": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "Title",
+        "FirstName",
+        "FamilyName",
+        "Organization",
+        "Department",
+        "StreetNameWithNumber",
+        "PostalZip",
+        "City",
+        "Country",
+        "CallNumber",
+        "MobileNumber",
+        "FaxNumber",
+        "eMail",
+        "Homepage"
+      ]
+    },
+    "BanquetHeightType": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "BanquetHeightTypeId": {
+          "type": "integer"
+        },
+        "BanquetHeightTypeName": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "BanquetHeightTypeDescription": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "BanquetHeightTypeId",
+        "BanquetHeightTypeName",
+        "BanquetHeightTypeDescription"
+      ]
+    },
+    "ClimbingSystem": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "ClimbingSystemId": {
+          "type": "integer"
+        },
+        "ClimbingSystemName": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "ClimbingSystemDescription": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "ClimbingSystemId",
+        "ClimbingSystemName",
+        "ClimbingSystemDescription"
+      ]
+    },
+    "Coating": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "CoatingId": {
+          "type": "integer"
+        },
+        "CoatingName": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "CoatingDescription": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "CoatingId",
+        "CoatingName",
+        "CoatingDescription"
+      ]
+    },
+    "ConnectionNode": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "NodeX": {
+          "type": "number"
+        },
+        "NodeY": {
+          "type": "number"
+        },
+        "NodeZ": {
+          "type": "number"
+        },
+        "DirectionX": {
+          "type": "number"
+        },
+        "DirectionY": {
+          "type": "number"
+        },
+        "DirectionZ": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "NodeX",
+        "NodeY",
+        "NodeZ",
+        "DirectionX",
+        "DirectionY",
+        "DirectionZ"
+      ]
+    },
+    "ConnectionPipeOfPipe": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "SpigotNode": {
+          "$ref": "#/definitions/ConnectionNode"
+        },
+        "SleeveNode": {
+          "$ref": "#/definitions/ConnectionNode"
+        }
+      },
+      "required": [
+        "SpigotNode",
+        "SleeveNode"
+      ]
+    },
+    "ConnectionPipeType": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "DictionaryOfPipeType": {
+          "$ref": "#/definitions/DictionaryOfPipeType"
+        },
+        "PipeProfileType": {
+          "$ref": "#/definitions/PipeProfileType"
+        },
+        "PipeTypeId": {
+          "type": "integer"
+        },
+        "PipeTypeName": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "PipeTypeDescription": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "MaterialName": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "InnerWidth": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "DictionaryOfPipeType",
+        "PipeProfileType",
+        "PipeTypeId",
+        "PipeTypeName",
+        "PipeTypeDescription",
+        "MaterialName",
+        "InnerWidth"
+      ]
+    },
+    "ConsistencyClass": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "ConsistencyClassId": {
+          "type": "integer"
+        },
+        "ConsistencyClassName": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "ConsistencyClassDescription": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "ConsistencyClassId",
+        "ConsistencyClassName",
+        "ConsistencyClassDescription"
+      ]
+    },
+    "CreatingApplicationOfOrder": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "ApplicationName": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "ApplicationDescription": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "ApplicationUrl": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "ApplicationName",
+        "ApplicationDescription",
+        "ApplicationUrl"
+      ]
+    },
+    "DictionaryOfManholePartType": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "TypeDictionaryId": {
+          "type": "integer"
+        },
+        "TypeDictionaryName": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "TypeDictionaryDescription": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "TypeDictionaryParentId": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "TypeDictionaryId",
+        "TypeDictionaryName",
+        "TypeDictionaryDescription",
+        "TypeDictionaryParentId"
+      ]
+    },
+    "DictionaryOfPipeConnectionType": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "TypeDictionaryId": {
+          "type": "integer"
+        },
+        "TypeDictionaryName": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "TypeDictionaryDescription": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "TypeDictionaryParentId": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "TypeDictionaryId",
+        "TypeDictionaryName",
+        "TypeDictionaryDescription",
+        "TypeDictionaryParentId"
+      ]
+    },
+    "DictionaryOfPipeType": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "TypeDictionaryId": {
+          "type": "integer"
+        },
+        "TypeDictionaryName": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "TypeDictionaryDescription": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "TypeDictionaryParentId": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "TypeDictionaryId",
+        "TypeDictionaryName",
+        "TypeDictionaryDescription",
+        "TypeDictionaryParentId"
+      ]
+    },
+    "DrawingOfManholePipeConnection": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "AngleFromOutlet": {
+          "type": "number"
+        },
+        "PipeNormalDeviationToCenter": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "AngleFromOutlet",
+        "PipeNormalDeviationToCenter"
+      ]
+    },
+    "EntryShaft": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "EntryShaftId": {
+          "type": "integer"
+        },
+        "EntryShaftName": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "ManholePartList": {
+          "type": [
+            "array",
+            "null"
+          ],
+          "items": {
+            "$ref": "#/definitions/ManholePart"
+          }
+        }
+      },
+      "required": [
+        "EntryShaftId",
+        "EntryShaftName",
+        "ManholePartList"
+      ]
+    },
+    "ExposureClass": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "ExposureClassId": {
+          "type": "integer"
+        },
+        "ExposureClassName": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "ExposureClassDescription": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "ExposureClassId",
+        "ExposureClassName",
+        "ExposureClassDescription"
+      ]
+    },
+    "HorizontalDatum": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "HorizontalDatumId": {
+          "type": "integer"
+        },
+        "HorizontalDatumName": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "HorizontalDatumDescription": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "HorizontalDatumId",
+        "HorizontalDatumName",
+        "HorizontalDatumDescription"
+      ]
+    },
+    "ManholeBase": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "BanquetHeightType": {
+          "$ref": "#/definitions/BanquetHeightType"
+        },
+        "Coating": {
+          "$ref": "#/definitions/Coating"
+        },
+        "ConsistencyClass": {
+          "$ref": "#/definitions/ConsistencyClass"
+        },
+        "ExposureClass": {
+          "$ref": "#/definitions/ExposureClass"
+        },
+        "StrengthClass": {
+          "$ref": "#/definitions/StrengthClass"
+        },
+        "Height": {
+          "type": "number"
+        },
+        "CenterEast": {
+          "type": "number"
+        },
+        "CenterNorth": {
+          "type": "number"
+        },
+        "OutflowHeightOfChannel": {
+          "type": "number"
+        },
+        "HasTransportAnchors": {
+          "type": "boolean"
+        },
+        "ChannelDescription": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "HasChannelClimbingSystem": {
+          "type": "boolean"
+        },
+        "NotPartOfOrder": {
+          "type": "boolean"
+        },
+        "ManholePipeConnectionList": {
+          "type": [
+            "array",
+            "null"
+          ],
+          "items": {
+            "$ref": "#/definitions/ManholePipeConnection"
+          }
+        },
+        "ManholeBaseRound": {
+          "$ref": "#/definitions/ManholeBaseRound"
+        },
+        "ManholeBaseStructure": {}
+      },
+      "required": [
+        "BanquetHeightType",
+        "Coating",
+        "ConsistencyClass",
+        "ExposureClass",
+        "StrengthClass",
+        "Height",
+        "CenterEast",
+        "CenterNorth",
+        "OutflowHeightOfChannel",
+        "HasTransportAnchors",
+        "ChannelDescription",
+        "HasChannelClimbingSystem",
+        "NotPartOfOrder",
+        "ManholePipeConnectionList",
+        "ManholeBaseRound",
+        "ManholeBaseStructure"
+      ]
+    },
+    "ManholeBaseRound": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "InnerDiameter": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "InnerDiameter"
+      ]
+    },
+    "ManholeDesign": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "ManholeDesignId": {
+          "type": "integer"
+        },
+        "ManholeDesignName": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "ManholeDesignDescription": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "ManholeDesignId",
+        "ManholeDesignName",
+        "ManholeDesignDescription"
+      ]
+    },
+    "ManholeDocument": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "ManholeDocumentId": {
+          "type": "integer"
+        },
+        "ManholeDocumentName": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "ManholeDocumentId",
+        "ManholeDocumentName"
+      ]
+    },
+    "ManholeItem": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "ManholeDesign": {
+          "$ref": "#/definitions/ManholeDesign"
+        },
+        "SewerSystemOfManhole": {
+          "$ref": "#/definitions/SewerSystem"
+        },
+        "VerticalConnectingSystem": {
+          "$ref": "#/definitions/VerticalConnectingSystem"
+        },
+        "WallClimbingSystem": {
+          "$ref": "#/definitions/ClimbingSystem"
+        },
+        "ManholeId": {
+          "type": "integer"
+        },
+        "ManholeName": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "ManholeNameManufacturer": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "DeliveryOrder": {
+          "type": "integer"
+        },
+        "DeliveryDate": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "TotalDepth_Cover2OutflowOfChannel": {
+          "type": "number"
+        },
+        "ManholeBaseOfManhole": {
+          "$ref": "#/definitions/ManholeBase"
+        },
+        "EntryShaftList": {
+          "type": [
+            "array",
+            "null"
+          ],
+          "items": {
+            "$ref": "#/definitions/EntryShaft"
+          }
+        },
+        "ManholeDocumentList": {
+          "type": [
+            "array",
+            "null"
+          ],
+          "items": {
+            "$ref": "#/definitions/ManholeDocument"
+          }
+        }
+      },
+      "required": [
+        "ManholeDesign",
+        "SewerSystemOfManhole",
+        "VerticalConnectingSystem",
+        "WallClimbingSystem",
+        "ManholeId",
+        "ManholeName",
+        "ManholeNameManufacturer",
+        "DeliveryOrder",
+        "DeliveryDate",
+        "TotalDepth_Cover2OutflowOfChannel",
+        "ManholeBaseOfManhole",
+        "EntryShaftList",
+        "ManholeDocumentList"
+      ]
+    },
+    "ManholePart": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "ManholePartType": {
+          "$ref": "#/definitions/ManholePartType"
+        },
+        "ManholePartButtomUpId": {
+          "type": "integer"
+        },
+        "ManholePartName": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "Height": {
+          "type": "number"
+        },
+        "UpperInnerDiameter": {
+          "type": "number"
+        },
+        "UpperCenterEast": {
+          "type": "number"
+        },
+        "UpperCenterNorth": {
+          "type": "number"
+        },
+        "LowerInnerDiameter": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "OptionalLowerCenterEast": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "OptionalLowerCenterNorth": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "ManholePartPipeConnectionList": {
+          "type": [
+            "array",
+            "null"
+          ],
+          "items": {
+            "$ref": "#/definitions/ManholePartPipeConnection"
+          }
+        },
+        "NotPartOfOrder": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "ManholePartType",
+        "ManholePartButtomUpId",
+        "ManholePartName",
+        "Height",
+        "UpperInnerDiameter",
+        "UpperCenterEast",
+        "UpperCenterNorth",
+        "NotPartOfOrder"
+      ]
+    },
+    "ManholePartPipeConnection": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "ManholePartPipeConnectionPipeType": {
+          "$ref": "#/definitions/PipeType"
+        },
+        "ManholePartPipeConnectionId": {
+          "type": "integer"
+        },
+        "ManholePartPipeConnectionName": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "PipeTypeDictionaryId": {
+          "type": "integer"
+        },
+        "PipeTypeId": {
+          "type": "integer"
+        },
+        "ConnectingPointBottomDistanceOfAxis": {
+          "type": "number"
+        },
+        "OuterPointEast": {
+          "type": "integer"
+        },
+        "OuterPointNorth": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "ManholePartPipeConnectionPipeType",
+        "ManholePartPipeConnectionId",
+        "ManholePartPipeConnectionName",
+        "PipeTypeDictionaryId",
+        "PipeTypeId",
+        "ConnectingPointBottomDistanceOfAxis",
+        "OuterPointEast",
+        "OuterPointNorth"
+      ]
+    },
+    "ManholePartType": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "DictionaryOfManholePartType": {
+          "$ref": "#/definitions/DictionaryOfManholePartType"
+        },
+        "ManholePartTypeId": {
+          "type": "integer"
+        },
+        "ManholePartTypeName": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "ManholePartTypeDescription": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "DictionaryOfManholePartType",
+        "ManholePartTypeId",
+        "ManholePartTypeName",
+        "ManholePartTypeDescription"
+      ]
+    },
+    "ManholePipeConnection": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "PipeTypeOfConnection": {
+          "$ref": "#/definitions/PipeTypeOfConnection"
+        },
+        "PipeConnectionId": {
+          "type": "integer"
+        },
+        "Comment": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "IsOutlet": {
+          "type": "boolean"
+        },
+        "ConnectingPointEast": {
+          "type": "number"
+        },
+        "ConnectingPointNorth": {
+          "type": "number"
+        },
+        "ConnectingPointHeightOfChannel": {
+          "type": "number"
+        },
+        "OuterPointEast": {
+          "type": "number"
+        },
+        "OuterPointNorth": {
+          "type": "number"
+        },
+        "OuterPointHeightOfChannel": {
+          "type": "number"
+        },
+        "DrawingOfManholePipeConnection": {
+          "$ref": "#/definitions/DrawingOfManholePipeConnection"
+        }
+      },
+      "required": [
+        "PipeTypeOfConnection",
+        "PipeConnectionId",
+        "Comment",
+        "IsOutlet",
+        "ConnectingPointEast",
+        "ConnectingPointNorth",
+        "ConnectingPointHeightOfChannel",
+        "OuterPointEast",
+        "OuterPointNorth",
+        "OuterPointHeightOfChannel",
+        "DrawingOfManholePipeConnection"
+      ]
+    },
+    "Order": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "CreatingApplicationOfOrder": {
+          "$ref": "#/definitions/CreatingApplicationOfOrder"
+        },
+        "ReleaseOfOrder": {
+          "$ref": "#/definitions/ReleaseOfOrder"
+        },
+        "OrderName": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "OrderDescription": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "OrderDate": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "OrderGuid": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "ProjectOfOrder": {
+          "$ref": "#/definitions/ProjectOfOrder"
+        },
+        "OrderVersion": {
+          "$ref": "#/definitions/OrderVersion"
+        }
+      },
+      "required": [
+        "CreatingApplicationOfOrder",
+        "ReleaseOfOrder",
+        "OrderName",
+        "OrderDescription",
+        "OrderDate",
+        "OrderGuid",
+        "ProjectOfOrder",
+        "OrderVersion"
+      ]
+    },
+    "OrderVersion": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "OrderVersionType": {
+          "$ref": "#/definitions/OrderVersionType"
+        },
+        "OrderVersionName": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "OrderVersionDescription": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "OrderVersionGuid": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "ManholeList": {
+          "type": [
+            "array",
+            "null"
+          ],
+          "items": {
+            "$ref": "#/definitions/ManholeItem"
+          }
+        },
+        "SectionList": {
+          "type": [
+            "array",
+            "null"
+          ],
+          "items": {
+            "$ref": "#/definitions/SewerSection"
+          }
+        }
+      },
+      "required": [
+        "OrderVersionType",
+        "OrderVersionName",
+        "OrderVersionDescription",
+        "OrderVersionGuid",
+        "ManholeList",
+        "SectionList"
+      ]
+    },
+    "OrderVersionType": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "OrderVersionTypeId": {
+          "type": "integer"
+        },
+        "OrderVersionTypeName": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "OrderVersionTypeDescription": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "OrderVersionTypeId",
+        "OrderVersionTypeName",
+        "OrderVersionTypeDescription"
+      ]
+    },
+    "PipeConnectionList": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "ConnectionPipeType": {
+          "$ref": "#/definitions/ConnectionPipeType"
+        },
+        "PipeConnectionButtomUpId": {
+          "type": "integer"
+        },
+        "PipeConnectionName": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "SpigotDistance": {
+          "type": "number"
+        },
+        "NormalAngle": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "ConnectionPipeType",
+        "PipeConnectionButtomUpId",
+        "PipeConnectionName",
+        "SpigotDistance",
+        "NormalAngle"
+      ]
+    },
+    "PipeConnectionType": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "DictionaryOfPipeConnectionType": {
+          "$ref": "#/definitions/DictionaryOfPipeConnectionType"
+        },
+        "PipeConnectionTypeId": {
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "PipeConnectionTypeName": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "PipeConnectionTypeDescription": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "DictionaryOfPipeConnectionType",
+        "PipeConnectionTypeId",
+        "PipeConnectionTypeName",
+        "PipeConnectionTypeDescription"
+      ]
+    },
+    "PipeList": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "PipeType": {
+          "$ref": "#/definitions/PipeType"
+        },
+        "PipeButtomUpId": {
+          "type": "integer"
+        },
+        "PipeLength": {
+          "type": "integer"
+        },
+        "HasDoubleSpigot": {
+          "type": "boolean"
+        },
+        "PipeConnectionList": {
+          "type": [
+            "array",
+            "null"
+          ],
+          "items": {
+            "$ref": "#/definitions/PipeConnectionList"
+          }
+        },
+        "TransitPipeOfPipe": {
+          "$ref": "#/definitions/TransitPipeOfPipe"
+        },
+        "ConnectionPipeOfPipe": {
+          "$ref": "#/definitions/ConnectionPipeOfPipe"
+        }
+      },
+      "required": [
+        "PipeType",
+        "PipeButtomUpId",
+        "PipeLength",
+        "HasDoubleSpigot",
+        "PipeConnectionList",
+        "TransitPipeOfPipe",
+        "ConnectionPipeOfPipe"
+      ]
+    },
+    "PipeProfileType": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "PipeProfileTypeId": {
+          "type": "integer"
+        },
+        "PipeProfileTypeName": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "PipeProfileTypeDescription": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "PipeProfileTypeId",
+        "PipeProfileTypeName",
+        "PipeProfileTypeDescription"
+      ]
+    },
+    "PipeType": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "DictionaryOfPipeType": {
+          "$ref": "#/definitions/DictionaryOfPipeType"
+        },
+        "PipeProfileType": {
+          "$ref": "#/definitions/PipeProfileType"
+        },
+        "PipeTypeId": {
+          "type": "integer"
+        },
+        "PipeTypeName": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "PipeTypeDescription": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "PipeConnectionType": {
+          "$ref": "#/definitions/PipeConnectionType"
+        },
+        "MaterialName": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "InnerWidth": {
+          "type": "number"
+        },
+        "InnerHeight": {
+          "type": [
+            "number",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "DictionaryOfPipeType",
+        "PipeProfileType",
+        "PipeTypeId",
+        "PipeTypeName",
+        "PipeTypeDescription",
+        "PipeConnectionType",
+        "MaterialName",
+        "InnerWidth"
+      ]
+    },
+    "PipeTypeOfConnection": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "DictionaryOfPipeType": {
+          "$ref": "#/definitions/DictionaryOfPipeType"
+        },
+        "PipeConnectionType": {
+          "$ref": "#/definitions/PipeConnectionType"
+        },
+        "PipeProfileType": {
+          "$ref": "#/definitions/PipeProfileType"
+        },
+        "PipeTypeId": {
+          "type": "integer"
+        },
+        "PipeTypeName": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "PipeTypeDescription": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "MaterialName": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "InnerWidth": {
+          "type": "integer"
+        },
+        "InnerHeight": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "DictionaryOfPipeType",
+        "PipeConnectionType",
+        "PipeProfileType",
+        "PipeTypeId",
+        "PipeTypeName",
+        "PipeTypeDescription",
+        "MaterialName",
+        "InnerWidth",
+        "InnerHeight"
+      ]
+    },
+    "ProjectOfOrder": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "CustomerAddress": {
+          "$ref": "#/definitions/Address"
+        },
+        "HorizontalDatum": {
+          "$ref": "#/definitions/HorizontalDatum"
+        },
+        "ManufacturerAddress": {
+          "$ref": "#/definitions/Address"
+        },
+        "SiteAddress": {
+          "$ref": "#/definitions/Address"
+        },
+        "VerticalDatum": {
+          "$ref": "#/definitions/VerticalDatum"
+        },
+        "ProjectGuid": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "ProjectName": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "ProjectDescription": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "SiteLocationLatidude": {
+          "type": "number"
+        },
+        "SiteLocationLongitude": {
+          "type": "number"
+        },
+        "ProjectLocation": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "CustomerAddress",
+        "HorizontalDatum",
+        "ManufacturerAddress",
+        "SiteAddress",
+        "VerticalDatum",
+        "ProjectGuid",
+        "ProjectName",
+        "ProjectDescription",
+        "SiteLocationLatidude",
+        "SiteLocationLongitude",
+        "ProjectLocation"
+      ]
+    },
+    "ReleaseOfOrder": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "ReleaseName": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "ReleaseDescription": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "ReleaseName",
+        "ReleaseDescription"
+      ]
+    },
+    "SewerSection": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "SewerSystemOfSection": {
+          "$ref": "#/definitions/SewerSystem"
+        },
+        "SectionName": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "FromManholeId": {
+          "type": "integer"
+        },
+        "ToManholeId": {
+          "type": "integer"
+        },
+        "DeliveryOrder": {
+          "type": "integer"
+        },
+        "DeliveryDate": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "PipeList": {
+          "type": [
+            "array",
+            "null"
+          ],
+          "items": {
+            "$ref": "#/definitions/PipeList"
+          }
+        }
+      },
+      "required": [
+        "SewerSystemOfSection",
+        "SectionName",
+        "FromManholeId",
+        "ToManholeId",
+        "DeliveryOrder",
+        "DeliveryDate",
+        "PipeList"
+      ]
+    },
+    "SewerSystem": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "SewerSystemId": {
+          "type": "integer"
+        },
+        "SewerSystemName": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "SewerSystemDescription": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "SewerSystemId",
+        "SewerSystemName",
+        "SewerSystemDescription"
+      ]
+    },
+    "StrengthClass": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "StrengthClassId": {
+          "type": "integer"
+        },
+        "StrengthClassName": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "StrengthClassDescription": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "StrengthClassId",
+        "StrengthClassName",
+        "StrengthClassDescription"
+      ]
+    },
+    "TransitPipeOfPipe": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "DeviatingSpigotPipeTypeOfTransitPipe": {
+          "$ref": "#/definitions/PipeType"
+        },
+        "TransitionPointFromSpigotNode": {
+          "$ref": "#/definitions/ConnectionNode"
+        },
+        "TransitionPointToSleeveNode": {
+          "$ref": "#/definitions/ConnectionNode"
+        }
+      },
+      "required": [
+        "DeviatingSpigotPipeTypeOfTransitPipe",
+        "TransitionPointFromSpigotNode",
+        "TransitionPointToSleeveNode"
+      ]
+    },
+    "VerticalConnectingSystem": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "VerticalConnectingSystemId": {
+          "type": "integer"
+        },
+        "VerticalConnectingSystemName": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "VerticalConnectingSystemDescription": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "VerticalConnectingSystemId",
+        "VerticalConnectingSystemName",
+        "VerticalConnectingSystemDescription"
+      ]
+    },
+    "VerticalDatum": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "VerticalDatumId": {
+          "type": "integer"
+        },
+        "VerticalDatumName": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "VerticalDatumDescription": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "VerticalDatumId",
+        "VerticalDatumName",
+        "VerticalDatumDescription"
+      ]
+    }
+  },
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "Order": {
+      "$ref": "#/definitions/Order"
+    }
+  },
+  "required": [
+    "Order"
+  ]
+}
